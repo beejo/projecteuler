@@ -1,0 +1,10 @@
+i = 0
+n = 1000
+isum = 0
+
+while i < n:
+    if  (i % 3) == 0 or (i % 5) == 0:
+         isum = isum + i
+    i = i + 1
+    
+print(isum)

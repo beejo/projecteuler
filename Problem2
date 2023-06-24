@@ -1,0 +1,13 @@
+def fibonacci(prev,curr,fibsum):
+    fibnext = prev + curr
+    if fibnext > 4000000:
+        return fibsum
+    
+    if fibnext % 2 == 0:
+        fibsum += fibnext
+    return fibonacci(curr,fibnext,fibsum)
+
+
+osum = 2
+rr = fibonacci(1,2,osum)
+print(rr)
